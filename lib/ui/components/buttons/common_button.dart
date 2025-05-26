@@ -16,15 +16,19 @@ class CommonButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () { onTap(); },
-      child: Ink(
-        padding: EdgeInsets.symmetric(vertical: 19, horizontal: 24),
-        decoration: BoxDecoration(
-          color: backGroundColor,
-          borderRadius: BorderRadius.circular(radius),
+    return Ink(
+      decoration: BoxDecoration(
+        color: backGroundColor,
+        borderRadius: BorderRadius.circular(radius),
+      ),
+      child: InkWell(
+        onTap: () {
+          onTap();
+        },
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 19, horizontal: 24),
+          child: child,
         ),
-        child: child,
       ),
     );
   }

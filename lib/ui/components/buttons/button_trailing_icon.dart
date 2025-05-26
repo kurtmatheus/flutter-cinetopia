@@ -1,4 +1,4 @@
-import 'package:cinetopia/ui/components/common_button.dart';
+import 'package:cinetopia/ui/components/buttons/common_button.dart';
 import 'package:flutter/material.dart';
 
 class ButtonTrailingIcon extends StatelessWidget {

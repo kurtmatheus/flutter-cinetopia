@@ -1,5 +1,6 @@
-import 'package:cinetopia/ui/components/button_trailing_icon.dart';
-import 'package:cinetopia/ui/components/texts.dart';
+import 'package:cinetopia/ui/components/buttons/button_trailing_icon.dart';
+import 'package:cinetopia/ui/components/text/texts.dart';
+import 'package:cinetopia/ui/screens/dashboard.dart';
 import 'package:cinetopia/ui/screens/search_movies.dart';
 import 'package:cinetopia/ui/styles/app_color.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class HomePage extends StatelessWidget {
                 Image.asset("assets/splash.png"),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 24.0),
-                  child: Text20DefaultColorBold(
+                  child: text20DefaultColorBold(
                     text:
                         "O lugar ideal para buscar, salvar e organizar seus filmes favoritos!",
                     align: TextAlign.center,
@@ -39,7 +40,7 @@ class HomePage extends StatelessWidget {
                 ButtonTrailingIcon(
                   backGroundColor: AppColor.lightPurple80,
                   radius: 50,
-                  text: Text20SelectColorBold(
+                  text: text20SelectColorBold(
                     text: "Quero Começar",
                     color: AppColor.deepPurple80,
                   ),
@@ -47,7 +48,7 @@ class HomePage extends StatelessWidget {
                   onTap:
                       () => Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => SearchMovies()),
+                        MaterialPageRoute(builder: (context) => Dashboard()),
                       ),
                 ),
               ],
