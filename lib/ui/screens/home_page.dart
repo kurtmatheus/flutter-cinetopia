@@ -1,7 +1,6 @@
 import 'package:cinetopia/ui/components/buttons/button_trailing_icon.dart';
 import 'package:cinetopia/ui/components/text/texts.dart';
 import 'package:cinetopia/ui/screens/dashboard.dart';
-import 'package:cinetopia/ui/screens/search_movies.dart';
 import 'package:cinetopia/ui/styles/app_color.dart';
 import 'package:flutter/material.dart';
 
