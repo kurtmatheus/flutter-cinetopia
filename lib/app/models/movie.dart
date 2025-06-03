@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:cinetopia/app/util/const.dart';
+
 class Movie {
   final int id;
   final String title;
@@ -28,6 +30,10 @@ class Movie {
       releaseDate: releaseDate ?? this.releaseDate,
       overview: overview ?? this.overview,
     );
+  }
+
+  String getMoviePoster() {
+    return "$imageUrlPrefix$imageUrl";
   }
 
   Map<String, dynamic> toMap() {
