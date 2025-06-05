@@ -21,6 +21,14 @@ Widget text20DefaultColorBold({required String text, TextAlign? align}) {
   );
 }
 
+Widget text32DefaultColorBold({required String text, TextAlign? align}) {
+  return Text(
+    text,
+    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+    textAlign: align,
+  );
+}
+
 Widget text20DeepBlueBold({required String text}) {
   return Text(
     text,
